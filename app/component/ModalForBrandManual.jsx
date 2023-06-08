@@ -12,7 +12,7 @@ const ModalForBrandManual=({closeModal})=>{
         <button className='self-end justify-self-end relative bottom-10 left-6' onClick={closeModal}>X</button>
 
       <div className="flex flex-col">
-        <div className="flex gap-3">
+        <div className="flex flex-col md:flex-row gap-3">
             <div className="left inline-flex flex-col gap-6">
                 <div className="flex gap-3 items-center text-[#ED0A97] underline font-medium text-sm leading-4">
                    <AiOutlinePlus className="w-6 h-6 text-white bg-[#ED0A97] rounded-full" />
@@ -40,15 +40,25 @@ const ModalForBrandManual=({closeModal})=>{
                 </ul>
             </div>
         </div>
-        <div className="bottom">
-            <div className="left">
-                <div>
+
+        <div className="bottom flex-col md:flex-row mt-10 justify-between">
+            <div className="left flex gap-3">
+                <div className="flex items-center gap-1">
                     <input type="checkbox" />
+                    <p>Past Campaigns</p>
                 </div>
-                <div></div>
-                <div></div>
+                <div className="flex items-center gap-1">
+                    <input type="checkbox" />
+                    <p>Guidelines</p>
+                </div>
+                <div className="flex items-center gap-1">
+                    <input type="checkbox" />
+                    <p>Website</p>
+                </div>
             </div>
-            <div className="right"></div>
+            <div className="right justify-end">
+                <button className="border border-black py-1 px-3 hover:bg-slate-300 rounded-lg border-solid bg-white self-end justify-self-end">Submit</button>
+            </div>
         </div>
       </div>
         </div>

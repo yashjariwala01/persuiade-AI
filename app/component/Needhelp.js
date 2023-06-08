@@ -1,10 +1,11 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Needhelp = () => {
   return (
     <div>
       <p >Need help?</p>
-      <img className='w-10 h-10 relative left-6' src='/needhelpimage.svg' alt="something" />
+      <Image className='relative left-6' src='/image/needhelpimage.svg' alt="something" width={40} height={40} />
     </div>
   )
 }

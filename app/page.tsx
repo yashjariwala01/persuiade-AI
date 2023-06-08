@@ -1,22 +1,26 @@
 import { AiFillPlayCircle } from 'react-icons/ai';
 import Needhelp from './component/Needhelp';
+import Image from 'next/image';
+import Link from 'next/link';
+import Header from './Header';
 
 export default function Home() {
   return (
-   <main className="container flex w-full min-h-screen justify-center items-center">
+   <main className="container flex w-full min-h-screen justify-center items-center m-auto">
+    {false && <Header/>}
     <div className="flex flex-col p-4 space-y-12 w-full max-w-4xl ">
       <div className="level1 flex flex-col space-y-5 items-center justify-center">
-        <div className="vectorImages flex">
-          <img  src='/Vectorpv.svg' alt="something" />
-          <img src='/Vectorev.svg'  alt="something" />
-          <img src='/Vectorrv.svg'  alt="something" />
-          <img src='/Vectorsv.svg'  alt="something" />
-          <img src="/Vectoruv.svg"  alt="something" />
-          <img src='/Vectorav.svg'  alt="something" />
-          <img src='/Vectoriv.svg'  alt="something" />
-          <img src='/Vectordotv.svg'alt="something" />
-          <img src='/Vectordv.svg'  alt="something" />
-          <img src='/Vectorev.svg'  alt="something" />
+        <div className="vectorImages flex relative">
+          <Image width={23.31} height={31.96} src='/image/Vectorpv.svg' alt="something" />
+          <Image width={23.31} height={24.23}  src='/image/Vectorev.svg'  alt="something" />
+          <Image width={13.13} height={22.82}  src='/image/Vectorrv.svg'  alt="something" />
+          <Image width={16.96} height={24.24}  src='/image/Vectorsv.svg'  alt="something" />
+          <Image width={21.15} height={22.82}  src="/image/Vectoruv.svg"  alt="something" />
+          <Image width={24.44} height={24.22}  src='/image/Vectorav.svg'  alt="something" />
+          <Image width={6.17} height={22.82}  src='/image/Vectoriv.svg'  alt="something" />
+          <Image  width={9.31} height={9.58} className='absolute right-[47px] bottom-[29px]' src='/image/Vectordotv.svg'alt="something" />
+          <Image  width={24.44} height={32.96} src='/image/Vectordv.svg'  alt="something" />
+          <Image width={23.71} height={24.23}  src='/image/Vectorev.svg'  alt="something" />
         </div>
         <p className=" font-normal text-sm leading-5  text-center text-[#000000]">
         <span> Instant marketing with the power of </span>
@@ -59,22 +63,16 @@ export default function Home() {
                   <p className="relative text-[13px] text-[#8C8C8C] text-center">Create an account</p>
                   </div> 
                   <div className="loginbutton">
-                  <button className="bg-black border border-black text-white p-3 w-28 rounded-md font-medium bottom-4"> LOG IN </button> 
+                  
+                  <Link className='flex justify-center items-center gap-2' href={'/campaigntype'} > <button className="bg-black border border-black text-white p-3 w-28 rounded-md font-medium bottom-4"> LOG IN </button> </Link>
+
                   <p className="relative text-[13px] text-[#8C8C8C] text-center">Already a user</p>
                   </div>
                 </div>
               </form>
           </div>
       </div>
-      {/* <div className="level3">
-      <div className="flex flex-col justify-center items-center ">
-                <AiFillPlayCircle className="text-blue-700 w-12 h-12 md:w-14 md:h-14 mt-3"/>
-                <p className='text-sm text-[#8C8C8C]'>Watch demo</p>
-      </div>
-      <div className='mt-20 text-center'>
-        <p><span>© </span> copyright Persuaide Software Solutions Pvt Ltd 2023</p>
-      </div>
-      </div> */}
+    
       <div className="level3 grid grid-rows-3">
       <div className="self-center justify-self-center ">
                 <AiFillPlayCircle className="text-blue-700 w-12 h-12 md:w-14 md:h-14 mt-3"/>
