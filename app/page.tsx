@@ -12,13 +12,13 @@ export default function Home() {
     <div className="flex flex-col p-4 space-y-12 w-full max-w-4xl ">
       <div className="level1 flex flex-col space-y-5 items-center justify-center">
         <div className="vectorImages flex relative">
-          {/* <Image src='/image/Layer_7.jpeg' width={191} height={39} alt='logo'/> */}
+          <Image src='/image/Layer_7.jpeg' width={191} height={39} alt='logo'/>
         </div>
         <p className=" font-normal text-sm leading-5  text-center text-[#000000]">
         <span> Instant marketing with the power of </span>
         <br />{" "}
         <span className="text-[#ED0A97] font-bold">
-          {/* Behavioural science + A.I */}
+          Behavioural science + A.I
         </span>
       </p>
       </div>
