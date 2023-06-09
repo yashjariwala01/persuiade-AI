@@ -6,7 +6,7 @@ import { AiOutlinePlus } from 'react-icons/ai';
 const ModalForBrandManual=({closeModal})=>{
        return (
         <>
-        <div className='absolute left-0 right-0 top-0 -bottom-full opacity-90 bg-[#004C66]'></div>
+        <div className='absolute left-0 right-0 top-0 -bottom-full opacity-[.95] bg-[#8C8C8C]'></div>
         <div className='absolute flex flex-col top-[50%] left-[50%] max-w-[38rem] translate-x-[-50%] translate-y-[-50%] bg-white py-14 px-10 opacity-100'>
 
         <button className='self-end justify-self-end relative bottom-10 left-6' onClick={closeModal}>X</button>
@@ -56,7 +56,7 @@ const ModalForBrandManual=({closeModal})=>{
                     <p>Website</p>
                 </div>
             </div>
-            <div className="right justify-end">
+            <div className="right flex justify-end">
                 <button className="border border-black py-1 px-3 hover:bg-slate-300 rounded-lg border-solid bg-white self-end justify-self-end">Submit</button>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiOutlinePlusCircle } from 'react-icons/ai';
 import { AiOutlineSearch } from 'react-icons/ai';
+import Needhelp from '../component/Needhelp';
 
 const page = () => {
   return (
@@ -107,6 +108,9 @@ const page = () => {
                 </div>
             </div>
         </div>
+        </div>
+        <div className="self-end">
+          <Needhelp/>
         </div>
       </main>
       </div>

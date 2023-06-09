@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import Needhelp from '../component/Needhelp';
 import ModalForTry from '../component/ModalForTry'; 
-import Header from '../Header';
+
 
 const page = () => {
     const [tryModal, setTryModal] = useState(false);
@@ -26,7 +26,7 @@ const page = () => {
                     <BsFillArrowRightCircleFill className='w-9 h-9'/>
                     </div>
                 </div>
-                {/* {tryModal && < ModalForTry closeModal={closeTryModal}/>} */}
+                
 
                 <div className='flex flex-col items-center gap-4'>
                     <h3 className='text-4xl font-bold '>re-buy</h3>

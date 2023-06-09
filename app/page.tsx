@@ -1,23 +1,24 @@
 import { AiFillPlayCircle } from 'react-icons/ai';
-import Needhelp from './component/Needhelp';
+// import Needhelp from './component/Needhelp';
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from './Header';
+import Needhelp from './(withnav)/component/Needhelp';
 
 export default function Home() {
   return (
-   <main className="container flex w-full min-h-screen justify-center items-center m-auto">
+   <main className="container flex w-full min-h-screen justify-center items-center m-auto mt-10">
     {false && <Header/>}
     <div className="flex flex-col p-4 space-y-12 w-full max-w-4xl ">
       <div className="level1 flex flex-col space-y-5 items-center justify-center">
         <div className="vectorImages flex relative">
-          <Image src='/image/Layer_7.jpeg' width={191} height={39} alt='logo'/>
+          {/* <Image src='/image/Layer_7.jpeg' width={191} height={39} alt='logo'/> */}
         </div>
         <p className=" font-normal text-sm leading-5  text-center text-[#000000]">
         <span> Instant marketing with the power of </span>
         <br />{" "}
         <span className="text-[#ED0A97] font-bold">
-          Behavioural science + A.I
+          {/* Behavioural science + A.I */}
         </span>
       </p>
       </div>
@@ -54,8 +55,8 @@ export default function Home() {
                   <p className="relative text-[13px] text-[#8C8C8C] text-center">Create an account</p>
                   </div> 
                   <div className="loginbutton">
-                  
-                  <Link className='flex justify-center items-center gap-2' href={'/campaigntype'} > <button className="bg-black border border-black text-white p-3 w-28 rounded-md font-medium bottom-4"> LOG IN </button> </Link>
+                  <Link className='flex justify-center items-center gap-2' href={'/campaigntype'} > <button className="bg-black border border-black text-white p-3 w-28 rounded-md font-medium bottom-4"> LOG IN </button> 
+                  </Link>
 
                   <p className="relative text-[13px] text-[#8C8C8C] text-center">Already a user</p>
                   </div>

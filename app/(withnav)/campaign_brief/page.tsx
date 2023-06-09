@@ -1,9 +1,16 @@
-import React from 'react'
+'use client'
+import React, {useState} from 'react'
 import { TfiUpload } from 'react-icons/tfi';
 import { FaFeatherAlt } from 'react-icons/fa';
 
+import UploadModalComponent from '../component/UploadModalComponent';
+
 
 const page = () => {
+    const [uploadModal, setUploadModal] = useState(false);
+    
+    const closeUploadModal=()=> setUploadModal(false);
+
   return (
     <main className='container flex flex-col w-full m-auto min-h-screen justify-center  items-center '>
         <div className='flex flex-col lg:flex-row w-[80%] m-auto justify-center items-center space-y-8 mt-10 '>
@@ -16,7 +23,7 @@ const page = () => {
                 <div className="level2 flex flex-col bg-[#E0E0E0] rounded-xl space-y-2 shadow-lg p-8 md:w-[568px] md:h-fit">
                     <p className='font-semibold text-sm md:leading-7 items-center text-center' >Need some help? Use the AUTO-FILL option</p>
 
-                    <button className='bg-[#ED0A97] rounded-lg p-2 md:w-fit self-center flex gap-1 items-center'><p className='text-white text-xs self-center'>Past Campaigns & Brand Manual</p><TfiUpload className='bg-white rounded-md text-[#ED0A97] w-[59px] h-[30px] p-1 place-self-center'/></button>
+                    <button onClick={()=>setUploadModal(true)} className='bg-[#ED0A97] rounded-lg p-2 md:w-fit self-center flex gap-1 items-center'><p className='text-white text-xs self-center'>Past Campaigns & Brand Manual</p><TfiUpload className='bg-white rounded-md text-[#ED0A97] w-[59px] h-[30px] p-1 place-self-center'/></button>
 
                     <p className='text-xs self-center'>File formats: jpg, pdf, doc, ppt, html</p>
                     
@@ -131,6 +138,7 @@ const page = () => {
                 </div>
             </div>
         </div>
+            { uploadModal && <UploadModalComponent closeModal={closeUploadModal}/>}
     </main>
   )
 }
