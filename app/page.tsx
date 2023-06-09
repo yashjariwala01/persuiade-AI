@@ -11,16 +11,7 @@ export default function Home() {
     <div className="flex flex-col p-4 space-y-12 w-full max-w-4xl ">
       <div className="level1 flex flex-col space-y-5 items-center justify-center">
         <div className="vectorImages flex relative">
-          <Image width={23.31} height={31.96} src='/image/Vectorpv.svg' alt="something" />
-          <Image width={23.31} height={24.23}  src='/image/Vectorev.svg'  alt="something" />
-          <Image width={13.13} height={22.82}  src='/image/Vectorrv.svg'  alt="something" />
-          <Image width={16.96} height={24.24}  src='/image/Vectorsv.svg'  alt="something" />
-          <Image width={21.15} height={22.82}  src="/image/Vectoruv.svg"  alt="something" />
-          <Image width={24.44} height={24.22}  src='/image/Vectorav.svg'  alt="something" />
-          <Image width={6.17} height={22.82}  src='/image/Vectoriv.svg'  alt="something" />
-          <Image  width={9.31} height={9.58} className='absolute right-[47px] bottom-[29px]' src='/image/Vectordotv.svg'alt="something" />
-          <Image  width={24.44} height={32.96} src='/image/Vectordv.svg'  alt="something" />
-          <Image width={23.71} height={24.23}  src='/image/Vectorev.svg'  alt="something" />
+          <Image src='/image/Layer_7.jpeg' width={191} height={39} alt='logo'/>
         </div>
         <p className=" font-normal text-sm leading-5  text-center text-[#000000]">
         <span> Instant marketing with the power of </span>
