@@ -5,7 +5,7 @@ import { FaFeatherAlt } from 'react-icons/fa';
 
 const page = () => {
   return (
-    <main className='container flex flex-col w-full m-auto min-h-screen justify-center items-center'>
+    <main className='container flex flex-col w-full m-auto min-h-screen justify-center  items-center '>
         <div className='flex flex-col lg:flex-row w-[80%] m-auto justify-center items-center space-y-8 mt-10 '>
             <div className='left flex flex-col w-full space-y-5'>
                 <div className="level1">

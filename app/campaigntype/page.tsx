@@ -12,7 +12,7 @@ const page = () => {
 
   return (
     
-    <main className='container flex flex-col w-full min-h-screen justify-center items-center'>
+    <main className='container flex flex-col w-full min-h-screen justify-center items-center m-auto'>
         <div className='flex flex-col w-3/4 items-center space-y-20 mt-20'>
             <div>
                 <p className='text-2xl'>Hi Parag, choose the type of campaign?</p>

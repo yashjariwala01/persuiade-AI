@@ -10,7 +10,7 @@ export default function Home() {
     "InstaLoan",
   ]);
   return (
-    <main className="container flex flex-col w-full min-h-screen justify-center items-center">
+    <main className="container flex flex-col w-full min-h-screen justify-center items-center m-auto">
       <div className="flex flex-col w-3/ m-auto justify-center items-center space-y-8 mt-10">
         <div className="level1 justify-self-start self-start">
           <p className="text-[#8C8C8C] leading-8 text-sm">MY ACCOUNT</p>

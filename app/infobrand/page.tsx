@@ -15,7 +15,7 @@ const page = () => {
   
 
   return (
-    <main className='container flex flex-col w-full min-h-screen justify-center items-center'>
+    <main className='container flex flex-col w-full min-h-screen justify-center items-center m-auto'>
         <div className='flex flex-col w-2/3  justify-center items-center space-y-8 mt-10'>
             
             <p className="level1 font-normal text-xl md:text-3xl leading-3 md:leading-[30px] text-[#238499] justify-self-start">Tell us about your brand</p>
