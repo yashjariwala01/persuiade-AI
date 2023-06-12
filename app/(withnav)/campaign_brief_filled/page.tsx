@@ -1,33 +1,26 @@
-'use client'
-import React, {useState} from 'react'
-import { TfiUpload } from 'react-icons/tfi';
+import React from 'react'
 import { FaFeatherAlt } from 'react-icons/fa';
 import Needhelp from '../component/Needhelp';
 
-import UploadModalComponent from '../component/UploadModalComponent';
-
 
 const page = () => {
-    const [uploadModal, setUploadModal] = useState(false);
-    
-    const closeUploadModal=()=> setUploadModal(false);
 
   return (
     <main className='container flex flex-col w-full m-auto min-h-screen justify-center  items-center '>
-        <div className='flex flex-col lg:flex-row w-[80%] m-auto justify-center items-center space-y-8 mt-10 '>
+        <div className='flex flex-col lg:flex-row w-[80%] m-auto justify-center items-center space-y-8 mt-10 mb-3'>
             <div className='left flex flex-col w-full space-y-5'>
                 <div className="level1">
                     <p className='font-normal text-xs'>ACQUISITION/ CROSS-SELL CAMPAIGN · HDFC BANK · Bill Pay Q3_draft </p>
                     <h1 className='text-lg md:text-3xl text-[#238499] leading-7 '>Give us your campaign brief</h1>
                 </div>
                 
-                <div className="level2 flex flex-col bg-[#E0E0E0] rounded-xl space-y-1 shadow-lg p-8 md:w-[568px] md:h-fit">
-                    <p className='font-semibold text-sm md:leading-7 items-center text-center' >Help our AI extract key info from your brief (optional)</p>
-
-                    <button onClick={()=>setUploadModal(true)} className='bg-[#ED0A97] rounded-lg p-2 md:w-fit self-center flex gap-1 items-center'><p className='text-white text-xs self-center'>Past Campaigns & Brand Manual</p><TfiUpload className='bg-white rounded-md text-[#ED0A97] w-[59px] h-[30px] p-1 place-self-center'/></button>
-
-                    <p className='text-xs self-center'>File formats: jpg, pdf, doc, ppt, html</p>
-                    
+                <div className="level2 flex flex-col bg-[#E0E0E0] rounded-xl space-y-4 shadow-lg p-8 md:w-[568px] md:h-fit justify-start">
+                    <h5>UPLOADED FILES</h5>
+                    <ol className='list-decimal'>
+                        <li>metro_acqui_Q4.02221.pdf</li>
+                        <li>stretchy_productinfo_0231.doc</li>
+                    </ol>
+                    <h6 className='underline '>ADD MORE</h6>
                 </div>
 
                 <div  className="level3 flex flex-col bg-white rounded-xl space-y-2 shadow-lg p-8 md:w-[568px] md:h-fit">
@@ -36,27 +29,27 @@ const page = () => {
                 <div className='formsfirsthalf flex flex-col'>
                 <div className="flex flex-col space-y-2 md:grid md:grid-cols-3" >
                     <label htmlFor="productname" className=" text-xs md:self-center" >PRODUCT NAME <span className='text-red-500 '>*</span></label>
-                    <input type="text" id='prductname' placeholder='Name of product or service' className='bg-[#F4F4F4] p-2  text-[#B6B6B6] text-xs md:col-span-2'/>
+                    <input type="text" id='prductname' placeholder='Name of product or service' className='bg-[#F4F4F4] p-1  text-[#B6B6B6] text-xs md:col-span-2'/>
                 </div>
                 
                 <div className="flex flex-col space-y-2 md:grid md:grid-cols-3" >
                     <label htmlFor="noofcustomers" className=" text-xs md:self-center">NO. OF CUSTOMERS <span className='text-red-500'>*</span></label>
-                    <input type="text" id='numberofcustomers' placeholder='Number of customers for this product or service' className='bg-[#F4F4F4] p-2 text-xs text-[#B6B6B6] md:col-span-2'/>
+                    <input type="text" id='numberofcustomers' placeholder='Number of customers for this product or service' className='bg-[#F4F4F4] p-1 text-xs  text-[#B6B6B6] md:col-span-2'/>
                 </div>
 
                 <div className="flex flex-col space-y-2 md:grid md:grid-cols-3" >
                     <label className="text-xs md:self-center" htmlFor="benefits">KEY BENEFITS</label>
-                    <input type="text" id='benefits' placeholder='E.g. Always on time, Low Cost, Safe' className='bg-[#F4F4F4] p-2 md:col-span-2 text-xs text-[#B6B6B6]' />
+                    <input type="text" id='benefits' placeholder='E.g. Always on time, Low Cost, Safe' className='bg-[#F4F4F4] text-xs p-1 md:col-span-2 text-[#B6B6B6]' />
                 </div>
 
                 <div className="flex flex-col space-y-2 md:grid md:grid-cols-3" >
                     <label className="text-xs md:self-center" htmlFor="creds">CREDS</label>
-                    <input type="text" id='creds' placeholder='E.g. India’s No.1,  Leader in,  Estd. 1977,  Powered by,  2 million sold' className=' text-xs bg-[#F4F4F4] p-2 md:col-span-2 text-[#B6B6B6]' />
+                    <input type="text" id='creds' placeholder='E.g. India’s No.1,  Leader in,  Estd. 1977,  Powered by,  2 million sold' className='bg-[#F4F4F4] p-1 md:col-span-2 text-xs text-[#B6B6B6]' />
                 </div>
 
                 <div className="flex flex-col space-y-2 md:grid md:grid-cols-3" >
                     <label className="text-xs md:self-center" htmlFor="TG">TARGET AUDIENCE</label>
-                    <input type="text" id='TG' placeholder='Age, Gender, Location, Interests' className='bg-[#F4F4F4] text-xs p-2 md:col-span-2 text-[#B6B6B6]' />
+                    <input type="text" id='TG' placeholder='Age, Gender, Location, Interests' className='bg-[#F4F4F4] p-1 md:col-span-2 text-xs text-[#B6B6B6]' />
                 </div>
 
                 <div className="flex flex-col space-y-2 md:grid md:grid-cols-3" >
@@ -70,17 +63,17 @@ const page = () => {
 
                     <div className="flex flex-col space-y-1">
                         <label className='text-[10px] leading-7' htmlFor="expirydate">OFFER EXPIRY</label>
-                        <input type="date"  id="expirydate" className='bg-[#F4F4F4] text-xs p-2 text-[#B6B6B6]'/>
+                        <input type="date"  id="expirydate" className='bg-[#F4F4F4] p-1 text-[#B6B6B6]'/>
                     </div>
 
                     <div className="flex flex-col space-y-1">
                         <label className='text-[10px] leading-7' htmlFor="offerlink">OFFER LINK</label>
-                        <input type="text" placeholder='Offer link' id="offerlink" className='bg-[#F4F4F4] p-2 text-xs text-[#B6B6B6]'/>
+                        <input type="text" placeholder='Offer link' id="offerlink" className='bg-[#F4F4F4] text-xs p-1 text-[#B6B6B6]'/>
                     </div>
 
                     <div className="flex flex-col space-y-1">
                         <label className='text-[10px] leading-7' htmlFor="promocode">PROMO CODE</label>
-                        <input type="text" placeholder='Promo Code'  id="promocode" className='bg-[#F4F4F4] p-2 text-xs text-[#B6B6B6]'/>
+                        <input type="text" placeholder='Promo Code'  id="promocode" className=' text-xs bg-[#F4F4F4] p-1 text-[#B6B6B6]'/>
                     </div>
                                         
                 </div>
@@ -89,7 +82,7 @@ const page = () => {
             </div>
                     <div className="level4 w-full max-w-[568px] flex justify-between">
                         <a className='underline' href="#"> SAVE DRAFT</a>
-                        <button className='px-3 py-2 rounded-md text-white text-xs leading-4 font-medium  bg-[#C4C4C4]'>CREATE CAMPAIGN</button>
+                        <button className='px-3 py-2 rounded-md text-white text-xs leading-4 font-medium  bg-black'>CREATE CAMPAIGN</button>
                     </div>
             </div>
             
@@ -139,13 +132,10 @@ const page = () => {
                 </div>
             </div>
         </div>
-            { uploadModal && <UploadModalComponent closeModal={closeUploadModal}/>}
-            
-    <div className='self-end'>
-        <Needhelp/>
-    </div>
+        <div className='self-end'>
+            <Needhelp/>
+        </div>
     </main>
-
   )
 }
 

@@ -1,9 +1,17 @@
-import React from 'react'
+'use client'
+import React,{useState} from 'react'
 import { AiOutlinePlusCircle } from 'react-icons/ai';
 import { AiOutlineSearch } from 'react-icons/ai';
 import Needhelp from '../component/Needhelp';
+import ModalForNewRetention from '../component/ModalForNewRetention';
+import {BsThreeDots} from 'react-icons/bs';
 
 const page = () => {
+    const [isModalOn, setIsModalOn ]= useState(false);
+    const closeModal=()=> setIsModalOn(false);
+    const [isOpen, setIsOpen] = useState(false);
+
+
   return (
     <div >
       <main className='container mt-32'>
@@ -16,7 +24,7 @@ const page = () => {
                     <h2 className=' text-blue-500 text-2xl md:text-3xl'>Campaigns</h2>
                 </div>
                 <div className="right">
-                    <button className='flex bg-pink-500 text-white my-2 p-2 w-auto rounded-lg font-medium text-[13px] justify-center items-center gap-[10px]'>NEW CAMPAIGN <AiOutlinePlusCircle className="w-[1.5rem] h-7 relative"/></button>
+                    <button onMouseOver={()=>setIsModalOn(true)} className='flex bg-pink-500 text-white my-2 p-2 w-auto rounded-lg font-medium text-[13px] justify-center items-center gap-[10px]'>NEW CAMPAIGN <AiOutlinePlusCircle className="w-[1.5rem] h-7 relative"/></button>
                 </div>
             </div>
 
@@ -50,9 +58,17 @@ const page = () => {
                     </div>
                 </div>
 
-                <div className="right flex md:flex-col gap-4 justify-between mt-4">
-                    <p>symbol</p>
-                    <p>In Progress..</p>
+                <div className="right relative flex md:flex-col gap-4 justify-between mt-4">
+                    <button onClick={()=>setIsOpen(!isOpen)}><BsThreeDots className='text-[#B6B6B6] w-6 h-6'/></button>
+
+                    {isOpen && (<div className='bg-white border border-[#B6B6B6] border-solid absolute flex flex-col items-start w-[190px] top-6 '>
+                                <div className='flex flex-col w-full gap-2 justify-start cursor-pointer'>
+                                    <p className='border-b font-semibold text-sm leading-7 border-[#B6B6B6] px-[12px] py-[2px] '>Rename</p>
+                                    <p className='border-b font-semibold text-sm leading-7 border-[#B6B6B6] px-[12px] py-[2px] '>Replicated</p>
+                                    <p className='border-b border-[#B6B6B6] px-[12px] py-[2px]'>Delete</p>   
+                                </div>
+                            </div>)}
+                    <p>In Progress ...</p>
                 </div>
             </div>
 
@@ -68,7 +84,7 @@ const page = () => {
                 </div>
 
                 <div className="right flex md:flex-col gap-4 justify-between mt-4">
-                    <p>symbol</p>
+                    <BsThreeDots className='text-[#B6B6B6] w-6 h-6'/>
                     <p>In Progress..</p>
                 </div>
             </div>
@@ -85,7 +101,7 @@ const page = () => {
                 </div>
 
                 <div className="right flex md:flex-col gap-4 justify-between mt-4">
-                    <p>symbol</p>
+                    <BsThreeDots className='text-[#B6B6B6] w-6 h-6'/>
                     <p>In Progress..</p>
                 </div>
             </div>
@@ -102,8 +118,8 @@ const page = () => {
                         <p>creator: name</p>
                     </div>
                 </div>
-                <div className="right flex flex-col justify-between">
-                    <p>symbol</p>
+                <div className="right flex md:flex-col gap-4 justify-between mt-4">
+                    <BsThreeDots className='text-[#B6B6B6] w-6 h-6'/>
                     <p>In Progress..</p>
                 </div>
             </div>
@@ -112,7 +128,9 @@ const page = () => {
         <div className="self-end">
           <Needhelp/>
         </div>
+
       </main>
+      {isModalOn && <ModalForNewRetention closeModals={closeModal}/>}
       </div>
   )
 }

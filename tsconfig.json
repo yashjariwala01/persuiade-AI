@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/component/ModalForBrandManual.jsx", "app/component/ModalForTry.jsx", "app/component/Needhelp.js", "app/(withnav)/campaign_brief/page.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/component/ModalForBrandManual.jsx", "app/component/ModalForTry.jsx", "app/component/Needhelp.js", "app/(withnav)/campaign_brief/page.tsx", "app/(withnav)/layout.tsx", "app/(withnav)/component/Needhelp.js", "app/(withnav)/component/ModalForBrandManual.jsx", "app/(withnav)/component/ModalForTry.jsx", "app/(withnav)/component/ModalForNewRetention.jsx"],
   "exclude": ["node_modules"]
 }

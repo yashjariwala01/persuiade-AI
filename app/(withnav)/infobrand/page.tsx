@@ -10,8 +10,7 @@ const page = () => {
     
     const [options, setOptions] = useState(["option1","option2"])
     const [brandManual, setBrandManual] = useState(false);
-    const closeBrandModal=()=> setBrandManual(false)
-
+    const closeBrandModal=()=> setBrandManual(false);
   
 
   return (
@@ -62,9 +61,11 @@ const page = () => {
             </div>
 
         </div>
+
         <div className="self-end relative right-3 mt-10">
                 <Needhelp />
-            </div>
+        </div>
+        
         {brandManual && <ModalForBrandManual closeModal={closeBrandModal}/>}
     </main>
   )
