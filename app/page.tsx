@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Header from './Header';
 import Needhelp from './(withnav)/component/Needhelp';
 
-export default function Home() {
+export default function Page() {
   return (
    <main className="container flex w-full min-h-screen justify-center items-center m-auto mt-10">
     {false && <Header/>}

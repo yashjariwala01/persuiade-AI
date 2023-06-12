@@ -5,7 +5,7 @@ import Needhelp from '../component/Needhelp';
 import ModalForTry from '../component/ModalForTry'; 
 
 
-const page = () => {
+const Page = () => {
     const [tryModal, setTryModal] = useState(false);
     
     const closeTryModal=()=> setTryModal(false);
@@ -54,4 +54,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

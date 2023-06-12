@@ -6,7 +6,7 @@ import Needhelp from '../component/Needhelp';
 import ModalForNewRetention from '../component/ModalForNewRetention';
 import {BsThreeDots} from 'react-icons/bs';
 
-const page = () => {
+const Page = () => {
     const [isModalOn, setIsModalOn ]= useState(false);
     const closeModal=()=> setIsModalOn(false);
     const [isOpen, setIsOpen] = useState(false);
@@ -135,4 +135,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

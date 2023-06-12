@@ -6,7 +6,7 @@ import Needhelp from '../component/Needhelp';
 import ModalForBrandManual from '../component/ModalForBrandManual'
 
 
-const page = () => {
+const Page = () => {
     
     const [options, setOptions] = useState(["option1","option2"])
     const [brandManual, setBrandManual] = useState(false);
@@ -71,4 +71,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

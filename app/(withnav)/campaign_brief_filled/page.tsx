@@ -3,7 +3,7 @@ import { FaFeatherAlt } from 'react-icons/fa';
 import Needhelp from '../component/Needhelp';
 
 
-const page = () => {
+const Page = () => {
 
   return (
     <main className='container flex flex-col w-full m-auto min-h-screen justify-center  items-center '>
@@ -139,4 +139,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -5,7 +5,7 @@ import {AiFillPlusCircle} from 'react-icons/ai';
 import {BiUserCircle} from 'react-icons/bi';
 import {BsThreeDots} from 'react-icons/bs';
 
-const page = () => {
+const Page = () => {
     const [isOpen, setIsOpen]= useState(false);
     const [isOpenUsers, setIsOpenUsers]= useState(false);
 
@@ -216,4 +216,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

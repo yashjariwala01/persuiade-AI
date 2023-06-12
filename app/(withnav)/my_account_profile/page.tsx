@@ -3,7 +3,7 @@ import Multiselect from "multiselect-react-dropdown";
 import { useState } from "react";
 import Needhelp from "../component/Needhelp";
 
-export default function Home() {
+export default function Page() {
   const [options, setOptions] = useState([
     "Credit Card",
     "Smart Buy",

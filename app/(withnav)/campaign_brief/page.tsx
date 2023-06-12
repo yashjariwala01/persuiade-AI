@@ -7,7 +7,7 @@ import Needhelp from '../component/Needhelp';
 import UploadModalComponent from '../component/UploadModalComponent';
 
 
-const page = () => {
+const Page = () => {
     const [uploadModal, setUploadModal] = useState(false);
     
     const closeUploadModal=()=> setUploadModal(false);
@@ -149,4 +149,5 @@ const page = () => {
   )
 }
 
-export default page
+export default Page;
+

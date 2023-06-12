@@ -6,7 +6,7 @@ import Multiselect from 'multiselect-react-dropdown';
 import Needhelp from '../component/Needhelp';
 
 
-const page = () => {
+const Page = () => {
     
     const [options, setOptions] = useState(["option1","option2"])
 
@@ -65,4 +65,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
